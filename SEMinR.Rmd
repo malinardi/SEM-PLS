@@ -1,0 +1,55 @@
+---
+title: "Modelagem de Equações Estruturais: Abordagem PLS"
+author: "Marcelo Linardi"
+date: "2022-02-11"
+output: html_document
+---
+   
+# Introduction   
+    
+Este curso irá abordar os princípios da Modelagem de Equações Estruturais na abordagem dos Mínimos quadrados parciais. Uma técnica versátil para estudos preditivos e exploratórios.   
+   
+   
+# 1. Preparação do ambiente de trabalho   
+    
+    
+## 1.1 Preparação do ambiente   
+    
+> Instalação e leitura de aplicações ou pacotes R para desenvolvimento do curso   
+
+```{r }
+start_time <- Sys.time()  # calcular o tempo de execução do programa
+
+library(pacman)  #Package Management Tool
+
+pacman::p_load(tidyverse,
+              haven,
+              knitr,
+              gplots,
+              SmartEDA,
+              stargazer,
+              kableExtra,
+              seminr)
+
+
+```
+  
+  > Leitura do Banco de Dados e validação das informações
+  
+```{r}
+dados <- data.frame(mobi) #carrega os dados instalados em forma de base de dados
+head(dados) #mostra as primeiras linhas da base de dados
+str(dados) #apresenta as variáveis, seu tipo e conteúdo
+ExpData(dados,type=1) #apresenta um overview da base de dados
+ExpData(dados,type=2) #mostra a qualidade de cada campo da base de dados
+
+
+```
+  
+  > Estatísticas Descritivas e primeiros testes de premissas   
+  
+```{r}
+
+```
+  
+
