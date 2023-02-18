@@ -49,7 +49,7 @@ ExpData(dados,type=2) #mostra a qualidade de cada campo da base de dados
   > Estatísticas Descritivas e primeiros testes de premissas   
   
 ```{r}
-
+ExpNumStat(dados, Outlier = TRUE, Nlim=1)
 ```
   
 
